@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence, useAnimation } from "framer-motion";
+import { motion, AnimatePresence, useAnimation, } from "framer-motion";
 import { Link } from "react-router-dom";
 import VisibilitySensor from "react-visibility-sensor";
 
@@ -59,6 +59,26 @@ const Home = () => {
       setIsVisible(true);
     }
   };
+
+
+
+
+// while in view
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   return (
     <div className="loading-container">
@@ -265,6 +285,8 @@ const Home = () => {
             className="button"></motion.button>
         </div>
 
+
+
         {/* section 2 */}
         <div className="section2">
           <div>
@@ -359,12 +381,6 @@ const Home = () => {
                 partialVisibility
                 offset={{ bottom: 100 }}>
                 <motion.h1
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{
-                    opacity: isVisible ? 1 : 0,
-                    y: isVisible ? 0 : 20,
-                  }}
-                  transition={{ duration: 2 }}
                   className="h1text1">
                   Motion Graphics.
                 </motion.h1>
@@ -414,8 +430,8 @@ const Home = () => {
                   }}
                   transition={{ duration: 2 }}
                   className="p1text1">
-                  From small teasers, to explainers, to full storytelling
-                  experiences, I will help you move ideas around.
+                  Use CSS for simple animations like transitions, transforms, and keyframes.
+Employ libraries like GSAP or Anime.js for more complex animations and interactions.
                 </motion.p2>
               </VisibilitySensor>
             </div>

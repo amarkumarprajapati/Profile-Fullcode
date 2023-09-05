@@ -50,7 +50,7 @@ const Work = () => {
                   Grocery Delivery
                 </motion.h1>
               </Link>
-              <p className="colorchange1">Motion Graphics</p>
+              <p className="colorchange1">Dynamic Pages</p>
             </div>
 
             {/* 2 */}
@@ -75,7 +75,7 @@ const Work = () => {
               <motion.p
               
                 className="colorchange1">
-                Static
+                Dynamic Pages
               </motion.p>
             </div>
             {/* 3 */}
@@ -100,7 +100,7 @@ const Work = () => {
               <motion.p
                
                 className="colorchange1">
-                Motion Graphics
+                Static
               </motion.p>
             </div>
             {/* 4 */}
@@ -122,7 +122,7 @@ const Work = () => {
               </Link>
               <motion.p
                 className="colorchange1">
-                Motion Graphics
+                Static
               </motion.p>
             </div>
             {/* 5 */}
@@ -144,7 +144,7 @@ const Work = () => {
                   Music Player
                 </motion.h1>
               </Link>
-              <motion.p className="colorchange1">Motion Graphics</motion.p>
+              <motion.p className="colorchange1">Static</motion.p>
             </div>
             {/* 6 */}
             <div className="back23">
@@ -164,7 +164,7 @@ const Work = () => {
                   Travels
                 </motion.h1>
               </Link>
-              <motion.p className="colorchange1">Motion Graphics</motion.p>
+              <motion.p className="colorchange1">Static</motion.p>
             </div>
             {/* 7 */}
             <div className="back23">
@@ -185,7 +185,7 @@ const Work = () => {
                 </motion.h1>
               </Link>
               <p whileHover={{ scale: 1.1, x: 10 }} className="colorchange1">
-                Motion Graphics
+              Static
               </p>
             </div>
             {/* 8 */}
@@ -206,7 +206,7 @@ const Work = () => {
                   Lamp
                 </motion.h1>
               </Link>
-              <p className="colorchange1">Motion Graphics</p>
+              <p className="colorchange1">Static</p>
             </div>
             {/* 9 */}
             <div className="back23">
@@ -226,7 +226,7 @@ const Work = () => {
                   Cosmetic
                 </motion.h1>
               </Link>
-              <p className="colorchange1">Motion Graphics</p>
+              <p className="colorchange1">Static</p>
             </div>
           </div>
         </div>

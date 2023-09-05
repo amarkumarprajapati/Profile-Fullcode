@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
+
 const Navbar = () => {
   
   const [isOpen, setIsOpen] = useState(false);
@@ -65,9 +66,7 @@ const Navbar = () => {
             href='/contact'
             initial={{ opacity: 0, y: "100%" }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            whileHover={{scale: 1.1}}
-            whileTap={{scale:0.8}}
+            transition={{ duration: 0.5 }}
             className='text3'>Contact Me</motion.a>
           </div>
         </div>
