@@ -35,7 +35,7 @@ const Work = () => {
           <div className="section23">
             {/* 1 */}
             <div className="back23">
-              <Link to="https://www.google.com" target="_blank">
+              <Link to="https://snazzy-alfajores-d038f5.netlify.app/" target="_blank">
                 <img src="Project 1.png" className="back25" />
               </Link>
             </div>
@@ -72,11 +72,7 @@ const Work = () => {
                   Food delivery
                 </motion.h1>
               </Link>
-              <motion.p
-              
-                className="colorchange1">
-                Dynamic Pages
-              </motion.p>
+              <motion.p className="colorchange1">Dynamic Pages</motion.p>
             </div>
             {/* 3 */}
             <div className="back23">
@@ -97,11 +93,7 @@ const Work = () => {
                   Customize t shirt
                 </motion.h1>
               </Link>
-              <motion.p
-               
-                className="colorchange1">
-                Static
-              </motion.p>
+              <motion.p className="colorchange1">Static</motion.p>
             </div>
             {/* 4 */}
             <div className="back23">
@@ -120,10 +112,7 @@ const Work = () => {
                   Old portfolio website
                 </motion.h1>
               </Link>
-              <motion.p
-                className="colorchange1">
-                Static
-              </motion.p>
+              <motion.p className="colorchange1">Static</motion.p>
             </div>
             {/* 5 */}
             <div className="back23">
@@ -155,7 +144,8 @@ const Work = () => {
               </Link>
             </div>
             <div>
-              <Link  className="Linktag"
+              <Link
+                className="Linktag"
                 to="https://precious-palmier-1e3227.netlify.app/"
                 target="_blank">
                 <motion.h1
@@ -175,7 +165,8 @@ const Work = () => {
               </Link>
             </div>
             <div>
-              <Link  className="Linktag"
+              <Link
+                className="Linktag"
                 to="https://shimmering-sopapillas-ca4e2b.netlify.app/"
                 target="_blank">
                 <motion.h1
@@ -185,7 +176,7 @@ const Work = () => {
                 </motion.h1>
               </Link>
               <p whileHover={{ scale: 1.1, x: 10 }} className="colorchange1">
-              Static
+                Static
               </p>
             </div>
             {/* 8 */}
@@ -197,7 +188,8 @@ const Work = () => {
               </Link>
             </div>
             <div>
-              <Link  className="Linktag"
+              <Link
+                className="Linktag"
                 to="https://quiet-pavlova-6e0690.netlify.app/"
                 target="_blank">
                 <motion.h1
@@ -217,7 +209,8 @@ const Work = () => {
               </Link>
             </div>
             <div>
-              <Link  className="Linktag"
+              <Link
+                className="Linktag"
                 to="https://marvelous-cupcake-55a8f2.netlify.app/"
                 target="_blank">
                 <motion.h1

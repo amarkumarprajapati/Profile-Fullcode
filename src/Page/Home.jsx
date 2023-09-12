@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence, useAnimation, } from "framer-motion";
-import { Link } from "react-router-dom";
+import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import VisibilitySensor from "react-visibility-sensor";
+import Details from "../Components/Details";
 
-const Home = () => {
+const Home = (a) => {
   const slides = [
     {
       id: 1,
@@ -60,25 +60,7 @@ const Home = () => {
     }
   };
 
-
-
-
-// while in view
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  // while in view
 
   return (
     <div className="loading-container">
@@ -285,8 +267,6 @@ const Home = () => {
             className="button"></motion.button>
         </div>
 
-
-
         {/* section 2 */}
         <div className="section2">
           <div>
@@ -303,8 +283,7 @@ const Home = () => {
                   }}
                   transition={{ duration: 1 }}
                   className="section_text1">
-                  Hey, there! I’m a Motion & Interaction Designer based in
-                  Viseu, Portugal. I focus on animation and Webflow development.
+                 {Details.details}
                 </motion.h1>
               </VisibilitySensor>
             </div>
@@ -370,7 +349,7 @@ const Home = () => {
                 animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
                 transition={{ duration: 1.5 }}
                 className="headh1tag">
-                Here’s what I can do to help:
+                {Details.section2}
               </motion.h1>
             </VisibilitySensor>
           </div>
@@ -380,10 +359,7 @@ const Home = () => {
                 onChange={handleVisibilityChange}
                 partialVisibility
                 offset={{ bottom: 100 }}>
-                <motion.h1
-                  className="h1text1">
-                  Motion Graphics.
-                </motion.h1>
+                <motion.h1 className="h1text1">Motion Graphics.</motion.h1>
               </VisibilitySensor>
               <VisibilitySensor
                 onChange={handleVisibilityChange}
@@ -397,8 +373,7 @@ const Home = () => {
                   }}
                   transition={{ duration: 2 }}
                   className="p1text1">
-                  From small teasers, to explainers, to full storytelling
-                  experiences, I will help you move ideas around.
+                  {Details.p1tag1}
                 </motion.p2>
               </VisibilitySensor>
             </div>
@@ -430,8 +405,7 @@ const Home = () => {
                   }}
                   transition={{ duration: 2 }}
                   className="p1text1">
-                  Use CSS for simple animations like transitions, transforms, and keyframes.
-Employ libraries like GSAP or Anime.js for more complex animations and interactions.
+                  {Details.p1tag2}
                 </motion.p2>
               </VisibilitySensor>
             </div>
@@ -514,37 +488,39 @@ Employ libraries like GSAP or Anime.js for more complex animations and interacti
             <div className="diplayflrex">
               <div className="margien">
                 <motion.img
-                  whileHover={{scale:1.1}}
+                  whileHover={{ scale: 1.1 }}
                   src="html5-logo-31820.png"
                   alt="image"
                   className="image1"
                 />
                 <motion.img
-                whileHover={{scale:1.1}}
+                  whileHover={{ scale: 1.1 }}
                   src="CSS3_logo_and_wordmark.svg.png"
                   alt="image1"
                   className="image2"
                 />
                 <motion.img
-                whileHover={{scale:1.1}} 
-                src="Javascript.png"
-                 alt="image2" 
-                 className="image3" />
+                  whileHover={{ scale: 1.1 }}
+                  src="Javascript.png"
+                  alt="image2"
+                  className="image3"
+                />
               </div>
               <div className="margien">
-                <motion.img 
-                whileHover={{scale:1.1}}
-                src="three.png" 
-                alt="image4" 
-                className="image451" />
                 <motion.img
-                whileHover={{scale:1.1}}
+                  whileHover={{ scale: 1.1 }}
+                  src="three.png"
+                  alt="image4"
+                  className="image451"
+                />
+                <motion.img
+                  whileHover={{ scale: 1.1 }}
                   src="framer-motion-seeklogo.com.png"
                   alt="image4"
                   className="image452"
                 />
                 <motion.img
-                whileHover={{scale:1.1}}
+                  whileHover={{ scale: 1.1 }}
                   src="mongo-removebg-preview.png"
                   alt="image4"
                   className="image453"

@@ -17,9 +17,6 @@
   mix-blend-mode: difference;
 }
 
-
-
-
 /* navbar */
 #Conatainer {
   width: 100%;
@@ -28,14 +25,7 @@
   height: 110vh;
   margin-top: -10px;
 }
-@-webkit-keyframes expand {
-  0% {
-    height: 0px;
-  }
-  100% {
-    height: 100vh;
-  }
-}
+
 
 /* Home */
 .Home {
@@ -58,8 +48,6 @@
 .Home:hover {
   color: white;
 }
-
-
 
 .Text {
   width: 50%;
@@ -195,9 +183,7 @@
   }
 }
 
-
 /* home */
-
 
 .Conatiner_1 {
   width: 100%;
@@ -209,15 +195,9 @@
 @media (max-width: 500px) {
   .Container_1 {
     height: 140vh;
-    margin-top: 0; 
-
+    margin-top: 0;
   }
 }
-
-
-
-
-
 
 .image4 {
   width: 40%;
@@ -232,11 +212,9 @@
   .image4 {
     width: 500px;
     margin: auto;
-    margin-top: 80px; 
+    margin-top: 80px;
   }
 }
-
-
 
 .texth1 {
   width: 500px;
@@ -256,9 +234,7 @@
   }
 }
 
-
-
-.textp1{
+.textp1 {
   width: 20%;
   margin-left: 250px;
   color: aliceblue;
@@ -274,7 +250,6 @@
   }
 }
 
-
 .textp2 {
   width: 30%;
   margin-left: 250px;
@@ -284,14 +259,12 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
 }
 
-
 @media (max-width: 500px) {
   .textp2 {
     width: 100%;
     margin: auto;
   }
 }
-
 
 .button {
   width: 80px;
@@ -310,8 +283,6 @@
   }
 }
 
-
-
 .button1 {
   width: 20px;
   height: 20px;
@@ -329,25 +300,9 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
 #4 {
   color: aliceblue;
 }
-
-
-
-
-
-
 
 /* sectoion 2 */
 
@@ -363,8 +318,6 @@
     margin: auto;
   }
 }
-
-
 
 .sec {
   width: 80%;
@@ -413,7 +366,7 @@
 .animat2 {
   background-color: #000000;
   width: 60%;
-  height: 70vh;
+  height: 85vh;
 }
 
 .button5 {
@@ -421,6 +374,7 @@
   float: right;
   font-size: 20px;
   margin: 10px;
+  top: -30px;
   width: 70px;
   height: 30px;
   background-color: #e4e4e4;
@@ -429,7 +383,7 @@
   background-color: black;
 }
 .h5processbar {
-  margin: 20px;
+  margin: 50px;
 }
 .texth4tag {
   position: relative;
@@ -439,7 +393,7 @@
   color: white;
 }
 .processbar {
-  width: 80%;
+  width: 95%;
   background-color: #b73c3c;
   height: 4px;
   position: relative;
@@ -452,10 +406,6 @@
   position: relative;
   top: -50px;
 }
-
-
-
-
 
 /* Section 3 */
 
@@ -477,10 +427,9 @@
   margin: auto;
 }
 
-.conat{
+.conat {
   margin-top: 30px;
 }
-
 
 .headh1tag {
   font-family: Montreuxc rg, sans-serif;
@@ -490,12 +439,9 @@
 
 @media (max-width: 500px) {
   .headh1tag {
-   margin-left: 50px;
-    
+    margin-left: 50px;
   }
 }
-
-
 
 .text12 {
   width: 35%;
@@ -507,12 +453,9 @@
 
 @media (max-width: 500px) {
   .text12 {
-   margin-left: -60px;
-    
+    margin-left: -60px;
   }
 }
-
-
 
 .text13 {
   width: 40%;
@@ -522,17 +465,11 @@
   line-height: 30px;
 }
 
-
-
-
 @media (max-width: 500px) {
   .text13 {
-   margin-left: -150px;
-    
+    margin-left: -150px;
   }
 }
-
-
 
 .text14 {
   width: 35%;
@@ -555,7 +492,7 @@
 
 @media (max-width: 500px) {
   .h1text1 {
-   margin-left: 50px;    
+    margin-left: 50px;
   }
 }
 
@@ -1014,7 +951,6 @@
   color: white;
 }
 .srh {
-  background-color: #2696e8;
   width: 50%;
   text-align: center;
   font-size: 40px;
@@ -1212,7 +1148,6 @@
   overflow: hidden;
 }
 
-
 .back25 {
   width: 100%;
   height: 100%;
@@ -1269,10 +1204,9 @@
   font-size: 35px;
   font-weight: 600;
 }
-.Linktag{
+.Linktag {
   text-decoration: none;
 }
-
 
 .colorchange1 {
   color: #000000;
