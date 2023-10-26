@@ -3,7 +3,7 @@ import Home from "./Page/Home";
 import About from "./Page/About";
 import Work from "./Page/Work";
 import Contact from "./Page/Contact";
-import "./Components/style.css";
+import "./Style.css";
 import { BrowserRouter as Main, Route, Routes } from "react-router-dom";
 import Footer from "./Page/Footer";
 import Cursor from "./Components/Cursor";
