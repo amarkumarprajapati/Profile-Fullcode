@@ -14,11 +14,8 @@ const Work = () => {
         <div className="Conatiner_4">
           <div className="slider1">
             <motion.img src="ezgif.com-video-to.gif" className="image6" />
-
             {/* Text */}
-
             <motion.h1 className="worktext_h1">What i've been up to</motion.h1>
-
             {/* ptag */}
             <motion.p className="worktext_p1">Work</motion.p>
             <motion.p className="worktext_p2">
@@ -35,8 +32,10 @@ const Work = () => {
           <div className="section23">
             {/* 1 */}
             <div className="back23">
-              <Link to="https://snazzy-alfajores-d038f5.netlify.app/" target="_blank">
-                <img src="Project 1.png" className="back25" />
+              <Link
+                to="https://flightticketbooking.netlify.app/"
+                target="_blank">
+                <img src="1565.png" className="back25" />
               </Link>
             </div>
             <div>
@@ -47,7 +46,7 @@ const Work = () => {
                 <motion.h1
                   whileHover={{ scale: 1.1, x: 10 }}
                   className="colorchange">
-                  Grocery Delivery
+                  Flight Booking
                 </motion.h1>
               </Link>
               <p className="colorchange1">Dynamic Pages</p>
@@ -56,7 +55,7 @@ const Work = () => {
             {/* 2 */}
             <div className="back23">
               <Link
-                to="https://deft-gingersnap-196fec.netlify.app/"
+                to="https://graceful-sunflower-32d7dd.netlify.app/"
                 target="_blank">
                 <img src="Project 2.png" className="back26" />
               </Link>
@@ -64,12 +63,12 @@ const Work = () => {
             <div>
               <Link
                 className="Linktag"
-                to="https://deft-gingersnap-196fec.netlify.app/"
+                to="https://graceful-sunflower-32d7dd.netlify.app/"
                 target="_blank">
                 <motion.h1
                   whileHover={{ scale: 1.1, x: 10 }}
                   className="colorchange">
-                  Food delivery
+                  Food Delivery
                 </motion.h1>
               </Link>
               <motion.p className="colorchange1">Dynamic Pages</motion.p>
@@ -77,39 +76,41 @@ const Work = () => {
             {/* 3 */}
             <div className="back23">
               <Link
-                to="https://darling-gingersnap-837acd.netlify.app/"
+                to="https://grosarydeliveryapp.netlify.app/"
                 target="_blank">
-                <img src="Project 3.png" className="back27" />
+                <img src="Project 1.png" className="back27" />
               </Link>
             </div>
             <div>
               <Link
                 className="Linktag"
-                to="https://darling-gingersnap-837acd.netlify.app/"
+                to="https://grosarydeliveryapp.netlify.app/"
                 target="_blank">
                 <motion.h1
                   whileHover={{ scale: 1.1, x: 10 }}
                   className="colorchange">
-                  Customize t shirt
+                  Grosary Delivery
                 </motion.h1>
               </Link>
               <motion.p className="colorchange1">Static</motion.p>
             </div>
             {/* 4 */}
             <div className="back23">
-              <Link to="https://www.google.com" target="_blank">
-                <img src="Project 40.png" className="back28" />
+              <Link
+                to="https://64ef7ad5a3eabb4890cf5eb9--darling-gingersnap-837acd.netlify.app/"
+                target="_blank">
+                <img src="Project 3.png" className="back28" />
               </Link>
             </div>
             <div>
               <Link
-                to="https://www.google.com"
+                to="https://64ef7ad5a3eabb4890cf5eb9--darling-gingersnap-837acd.netlify.app/"
                 className="Linktag"
                 target="_blank">
                 <motion.h1
                   whileHover={{ scale: 1.1, x: 10 }}
                   className="colorchange">
-                  Old portfolio website
+                  T-shirts
                 </motion.h1>
               </Link>
               <motion.p className="colorchange1">Static</motion.p>
@@ -117,29 +118,27 @@ const Work = () => {
             {/* 5 */}
             <div className="back23">
               <Link
-                to="https://euphonious-peony-7c42ff.netlify.app/"
+                to="https://64ef8a13fddcdf00086d4103--precious-palmier-1e3227.netlify.app/"
                 target="_blank">
-                <img src="Project 5.png" className="back28" />
+                <img src="Project 40.png" className="back28" />
               </Link>
             </div>
             <div>
               <Link
                 className="Linktag"
-                to="https://euphonious-peony-7c42ff.netlify.app/"
+                to="https://oldprofile1.netlify.app"
                 target="_blank">
                 <motion.h1
                   whileHover={{ scale: 1.1, x: 10 }}
                   className="colorchange">
-                  Music Player
+                  Old Portfolio
                 </motion.h1>
               </Link>
               <motion.p className="colorchange1">Static</motion.p>
             </div>
             {/* 6 */}
             <div className="back23">
-              <Link
-                to="https://precious-palmier-1e3227.netlify.app/"
-                target="_blank">
+              <Link to="https://oldprofile1.netlify.app" target="_blank">
                 <img src="Project 4.png" className="back28" />
               </Link>
             </div>
@@ -159,20 +158,20 @@ const Work = () => {
             {/* 7 */}
             <div className="back23">
               <Link
-                to="https://shimmering-sopapillas-ca4e2b.netlify.app/"
+                to="https://magnificent-alfajores-b52b1a.netlify.app/"
                 target="_blank">
-                <img src="Project 7.png" className="back28" />
+                <img src="Project 9.png" className="back28" />
               </Link>
             </div>
             <div>
               <Link
                 className="Linktag"
-                to="https://shimmering-sopapillas-ca4e2b.netlify.app/"
+                to="https://magnificent-alfajores-b52b1a.netlify.app/"
                 target="_blank">
                 <motion.h1
                   whileHover={{ scale: 1.1, x: 10 }}
                   className="colorchange">
-                  3D
+                  Signin in
                 </motion.h1>
               </Link>
               <p whileHover={{ scale: 1.1, x: 10 }} className="colorchange1">
@@ -182,20 +181,20 @@ const Work = () => {
             {/* 8 */}
             <div className="back23">
               <Link
-                to="https://quiet-pavlova-6e0690.netlify.app/"
+                to="https://musicplayerappnew.netlify.app/"
                 target="_blank">
-                <img src="Project 8.png" className="back28" />
+                <img src="Project 5.png" className="back28" />
               </Link>
             </div>
             <div>
               <Link
                 className="Linktag"
-                to="https://quiet-pavlova-6e0690.netlify.app/"
+                to="https://musicplayerappnew.netlify.app/"
                 target="_blank">
                 <motion.h1
                   whileHover={{ scale: 1.1, x: 10 }}
                   className="colorchange">
-                  Lamp
+                  Music Player
                 </motion.h1>
               </Link>
               <p className="colorchange1">Static</p>

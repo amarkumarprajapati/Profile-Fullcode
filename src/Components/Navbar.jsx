@@ -59,15 +59,16 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             >
               Use my contacts below if you need to put a project on the move, let’s work on it!
-              <br />Amarkumarprajapati.com
+              <br />
+              Email id - Amarkumarprajapati.com
             </motion.p>
             <br />
-            <motion.a
+            <motion.p
             href='/contact'
             initial={{ opacity: 0, y: "100%" }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className='text3'>Contact Me</motion.a>
+            className='text3'>Contact Me</motion.p>
           </div>
         </div>
       </motion.nav>:null}

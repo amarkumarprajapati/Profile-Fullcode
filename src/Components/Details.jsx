@@ -7,9 +7,7 @@ let Details = {
     p1tag4 :"From small teasers, to explainers, to full storytelling experiences, I will help you move ideas around.",
  }
 
-let Work = {
-    
-}
+
 
 
  export default Details

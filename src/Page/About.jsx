@@ -177,6 +177,7 @@ const About = () => {
               <p className="srh">ACHIEVEMENTS</p>
             </div>
             {/* 1 */}
+            <div>
             <motion.div whileHover={{ scale: 1.1 }} className="conatiner7">
               <div className="opacuty">
                 <h2 className="text6">PRESENTATION</h2>
@@ -256,6 +257,7 @@ const About = () => {
                 </p>
               </div>
             </motion.div>
+            </div>
           </div>
         </div>
       </div>

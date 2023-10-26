@@ -95,7 +95,7 @@ const Home = (a) => {
                 </motion.h1>
               )}
             </AnimatePresence>
-            {/* ptag */}
+
             {slides[currentSlide].id === 1 && (
               <motion.p
                 className="textp1"
@@ -257,10 +257,10 @@ const Home = (a) => {
             )}
           </div>
 
-          <motion.button
+          <button
             whileTap={{ scale: 0.8 }}
             onClick={handleNextSlide}
-            className="button1"></motion.button>
+            className="button1"></button>
           <motion.button
             whileTap={{ scale: 0.8 }}
             onClick={handlePrevSlide}
@@ -272,6 +272,7 @@ const Home = (a) => {
           <div>
             <div className="sec">
               <VisibilitySensor
+                className="section_text1"
                 onChange={handleVisibilityChange}
                 partialVisibility
                 offset={{ bottom: 100 }}>
@@ -281,9 +282,8 @@ const Home = (a) => {
                     opacity: isVisible ? 1 : 0,
                     y: isVisible ? 0 : 20,
                   }}
-                  transition={{ duration: 1 }}
-                  className="section_text1">
-                 {Details.details}
+                  transition={{ duration: 1 }}>
+                  {Details.details}
                 </motion.h1>
               </VisibilitySensor>
             </div>
@@ -449,18 +449,26 @@ const Home = (a) => {
                 offset={{ bottom: 100 }}>
                 <motion.h1 className="h1text1">Education.</motion.h1>
               </VisibilitySensor>
-              <VisibilitySensor>
-                <motion.p2
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{
-                    opacity: isVisible ? 1 : 0,
-                    y: isVisible ? 0 : 20,
-                  }}
-                  transition={{ duration: 2 }}
-                  className="p1text1">
-                  From small teasers, to explainers, to full storytelling
-                  experiences, I will help you move ideas around.
-                </motion.p2>
+              <VisibilitySensor
+                onChange={handleVisibilityChange}
+                partialVisibility
+                offset={{ bottom: 100 }}>
+                <VisibilitySensor
+                  onChange={handleVisibilityChange}
+                  partialVisibility
+                  offset={{ bottom: 100 }}>
+                  <motion.p2
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{
+                      opacity: isVisible ? 1 : 0,
+                      y: isVisible ? 0 : 20,
+                    }}
+                    transition={{ duration: 2 }}
+                    className="p1text1">
+                    From small teasers, to explainers, to full storytelling
+                    experiences, I will help you move ideas around.
+                  </motion.p2>
+                </VisibilitySensor>
               </VisibilitySensor>
             </div>
           </div>
