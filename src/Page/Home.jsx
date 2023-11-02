@@ -63,22 +63,11 @@ const Home = (a) => {
   // while in view
 
   return (
-    <div className="loading-container">
-      <div>
-        <div className="Conatiner_1">
-          <div className="slider1">
-            <motion.img
-              src={slides[currentSlide].imageUrl}
-              initial={{ x: -100 }}
-              animate={{ x: 0 }}
-              transition={{
-                duration: "1",
-                delay: "1",
-              }}
-              className="image4"
-            />
-
-            {/* Text */}
+    <>
+      {/* section1 */}
+      <section className="slider1">
+        <div className="home">
+          <div className="textimg">
             <AnimatePresence>
               {slides[currentSlide].id === 1 && (
                 <motion.h1
@@ -90,7 +79,6 @@ const Home = (a) => {
                     duration: "1",
                     delay: "1.2",
                   }}>
-                  {slides.text}
                   MERN STACK
                 </motion.h1>
               )}
@@ -105,7 +93,6 @@ const Home = (a) => {
                   duration: "1",
                   delay: "1.3",
                 }}>
-                {slides.text}
                 MongoDB
               </motion.p>
             )}
@@ -118,8 +105,8 @@ const Home = (a) => {
                   duration: "1",
                   delay: "1.4",
                 }}>
-                {slides.text}MongoDB is a NoSQL database that stores data in a
-                flexible, JSON-like format.
+                MongoDB is a NoSQL database that stores data in a flexible,
+                JSON-like format.
               </motion.p>
             )}
 
@@ -135,7 +122,6 @@ const Home = (a) => {
                   duration: "1",
                   delay: "1.2",
                 }}>
-                {slides.text}
                 Web Development
               </motion.h1>
             )}
@@ -149,7 +135,6 @@ const Home = (a) => {
                   duration: "1",
                   delay: "1.3",
                 }}>
-                {slides.text}
                 Node.js
               </motion.p>
             )}
@@ -162,8 +147,7 @@ const Home = (a) => {
                   duration: "1",
                   delay: "1.4",
                 }}>
-                {slides.text}Node.js is a runtime environment JavaScript on the
-                server.
+                Node.js is a runtime environment JavaScript on the server.
               </motion.p>
             )}
 
@@ -179,7 +163,6 @@ const Home = (a) => {
                   duration: "1",
                   delay: "1.2",
                 }}>
-                {slides.text}
                 Web Development
               </motion.h1>
             )}
@@ -193,7 +176,6 @@ const Home = (a) => {
                   duration: "1",
                   delay: "1.3",
                 }}>
-                {slides.text}
                 Vite+React
               </motion.p>
             )}
@@ -206,8 +188,7 @@ const Home = (a) => {
                   duration: "1",
                   delay: "1.4",
                 }}>
-                {slides.text}React is a JavaScript library for building user
-                interfaces
+                React is a JavaScript library for building user interfaces
               </motion.p>
             )}
 
@@ -223,7 +204,6 @@ const Home = (a) => {
                   duration: "1",
                   delay: "1.2",
                 }}>
-                {slides.text}
                 Web Development
               </motion.h1>
             )}
@@ -238,7 +218,6 @@ const Home = (a) => {
                   duration: "1",
                   delay: "1.3",
                 }}>
-                {slides.text}
                 Express.js
               </motion.p>
             )}
@@ -255,90 +234,98 @@ const Home = (a) => {
                 {slides.text}Express.js is a back-end framework for Node.js
               </motion.p>
             )}
+            <motion.button
+              whileFocus={{ scale: 1 }}
+              onClick={handleNextSlide}
+              className="button1"></motion.button>
+            <motion.button
+              whileHover={{ scale: 1 }}
+              onClick={handlePrevSlide}
+              className="button"></motion.button>
           </div>
+          <div className="color">
+            <motion.img
+              src={slides[currentSlide].imageUrl}
+              initial={{ x: -100 }}
+              animate={{ x: 0 }}
+              transition={{
+                duration: "1",
+                delay: "1",
+              }}
+              className="image4"
+            />
+          </div>
+        </div>
+      </section>
 
-          <button
-            whileTap={{ scale: 0.8 }}
-            onClick={handleNextSlide}
-            className="button1"></button>
-          <motion.button
-            whileTap={{ scale: 0.8 }}
-            onClick={handlePrevSlide}
-            className="button"></motion.button>
+      {/* section 2 */}
+      <div className="section2">
+        <div className="section21">
+          <VisibilitySensor
+            className="section_text1"
+            onChange={handleVisibilityChange}
+            partialVisibility
+            offset={{ bottom: 100 }}>
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{
+                opacity: isVisible ? 1 : 0,
+                y: isVisible ? 0 : 20,
+              }}
+              transition={{ duration: 1 }}>
+              {Details.details}
+            </motion.h1>
+          </VisibilitySensor>
+          <VisibilitySensor>
+            <motion.button
+              onClick={toggleSectionButton}
+              onChange={handleVisibilityChange}
+              whileTap={{ scaleX: 0.8 }}
+              className="section_button">
+              My Skill
+            </motion.button>
+          </VisibilitySensor>
         </div>
 
-        {/* section 2 */}
-        <div className="section2">
-          <div>
-            <div className="sec">
-              <VisibilitySensor
-                className="section_text1"
-                onChange={handleVisibilityChange}
-                partialVisibility
-                offset={{ bottom: 100 }}>
-                <motion.h1
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{
-                    opacity: isVisible ? 1 : 0,
-                    y: isVisible ? 0 : 20,
-                  }}
-                  transition={{ duration: 1 }}>
-                  {Details.details}
-                </motion.h1>
-              </VisibilitySensor>
-            </div>
-
-            {/* button */}
-            <VisibilitySensor>
-              <motion.button
-                onClick={toggleSectionButton}
-                whileTap={{ scaleX: 0.8 }}
-                className="section_button">
-                My Skill
-              </motion.button>
-            </VisibilitySensor>
-
-            {/* popup */}
-
-            {sectionbutton && (
-              <div className="animat1">
-                <div className="animat2">
-                  <div className="h5processbar">
-                    <h4 className="texth4tag">HTML</h4>
-                    <img src="point.png" className="processbar1" />
-                    <div className="processbar" />
-                  </div>
-                  <div className="h5processbar">
-                    <h4 className="texth4tag">CSS</h4>
-                    <img src="point.png" className="processbar1" />
-                    <div className="processbar" />
-                  </div>
-                  <div className="h5processbar">
-                    <h4 className="texth4tag">JavaScript</h4>
-                    <img src="point.png" className="processbar1" />
-                    <div className="processbar" />
-                  </div>
-                  <div className="h5processbar">
-                    <h4 className="texth4tag">React</h4>
-                    <img src="point.png" className="processbar1" />
-                    <div className="processbar" />
-                  </div>
-                  <div className="h5processbar">
-                    <h4 className="texth4tag">Framer-Motion</h4>
-                    <img src="point.png" className="processbar1" />
-                    <div className="processbar" />
-                    <button className="button5" onClick={toggleSectionButton}>
-                      Close
-                    </button>
-                  </div>
-                </div>
+        {/* popup */}
+        {sectionbutton && (
+          <div className="animat1">
+            <div className="animat2">
+              <div className="h5processbar">
+                <h4 className="texth4tag">HTML</h4>
+                <img src="point.png" className="processbar1" />
+                <div className="processbar" />
               </div>
-            )}
+              <div className="h5processbar">
+                <h4 className="texth4tag">CSS</h4>
+                <img src="point.png" className="processbar1" />
+                <div className="processbar" />
+              </div>
+              <div className="h5processbar">
+                <h4 className="texth4tag">JavaScript</h4>
+                <img src="point.png" className="processbar1" />
+                <div className="processbar" />
+              </div>
+              <div className="h5processbar">
+                <h4 className="texth4tag">React</h4>
+                <img src="point.png" className="processbar1" />
+                <div className="processbar" />
+              </div>
+              <div className="h5processbar">
+                <h4 className="texth4tag">Framer-Motion</h4>
+                <img src="point.png" className="processbar1" />
+                <div className="processbar" />
+                <button className="button5" onClick={toggleSectionButton}>
+                  Close
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-
-        {/* section 3 */}
-        <div className="headtag">
+        )}
+      </div>
+      {/* section 3 */}
+      <div>
+      <div className="headtag">
           <div className="head">
             <VisibilitySensor
               onChange={handleVisibilityChange}
@@ -473,9 +460,10 @@ const Home = (a) => {
             </div>
           </div>
         </div>
-
-        {/* section 4 */}
-        <div>
+      </div>
+      {/* section 4 */}
+      <div>
+      <div>
           <div className="section8">
             <div className="automix" id="Service">
               <VisibilitySensor
@@ -538,7 +526,7 @@ const Home = (a) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

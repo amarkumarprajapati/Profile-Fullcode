@@ -12,7 +12,6 @@ const About = () => {
       {/* first section */}
 
       <div className="conatiner4">
-        <div className="aeghs"></div>
         <div className="hggvd">
           <motion.h1
             initial={{ x: -1000 }}
@@ -58,7 +57,7 @@ const About = () => {
               delay: "0.5",
             }}
             src="3.png"
-            alt=""
+            alt="img"
             className="jhsdbv"
           />
           <motion.img
@@ -69,7 +68,7 @@ const About = () => {
               delay: "0.5",
             }}
             src="5.png"
-            alt=""
+            alt="img"
             className="jhvbdv"
           />
         </div>
@@ -127,8 +126,8 @@ const About = () => {
       {/* last second  */}
       <div className="connew">
         <div>
-          <div>
-            <h1 className="lasth1tag">What you can also expect from me.</h1>
+          <div className="lasth1tag">
+            <h1>What you can also expect from me.</h1>
           </div>
           <div className="box1">
             <h1 className="h1tag2">Collaboration</h1>
@@ -178,85 +177,85 @@ const About = () => {
             </div>
             {/* 1 */}
             <div>
-            <motion.div whileHover={{ scale: 1.1 }} className="conatiner7">
-              <div className="opacuty">
-                <h2 className="text6">PRESENTATION</h2>
-                <br />
-                <p className="text">
-                  Awarded as winner in PRESENTATION (Crossing method for fine
-                  ores) competition During UTKARSH at GCE, KEONJHAR.
-                </p>
-              </div>
-            </motion.div>
-            {/* 2 */}
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              id="conta"
-              className="conatiner8">
-              <div className="opacuty">
-                <h2 className="text6">COUNTER STRIKE 1.6</h2>
-                <br />
-                <p className="text">
-                  Awarded for COUNTER STRIKE 1.6 in Techno–Cultural fest
-                  2018-2019 Technical Representative in GCE, KEONJHAR.
-                </p>
-              </div>
-            </motion.div>
-            {/* 3 */}
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              id="conta"
-              className="conatiner9">
-              <div className="opacuty">
-                <h2 className="text6">UTKARSH,</h2>
-                <br />
-                <p className="text">
-                  Event Coordinator during UTKARSH, techno-cultural fest of GCE,
-                  KEONJHAR. Attended International Conference (IIESD) at GCE,
-                  KEONJHAR.
-                </p>
-              </div>
-            </motion.div>
-            {/* 4 */}
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              id="conta"
-              className="conatiner10">
-              <div className="opacuty">
-                <h2 className="text6">Technical</h2>
-                <br />
-                <p className="text">
-                  Technical Head in (CMPT 2K19), GCE, KEONJHAR, ODISHA.
-                </p>
-              </div>
-            </motion.div>
-            {/* 5 */}
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              id="conta"
-              className="conatiner11">
-              <div className="opacuty">
-                <h2 className="text6">National Conference</h2>
-                <br />
-                <p className="text">
-                  Students coordinator of National Conference (CMPT2K19) at
-                  Government college of Keonjhar, Odisha.
-                </p>
-              </div>
-            </motion.div>
-            \{/* 6 */}
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              id="conta"
-              className="conatiner12">
-              <div className="opacuty">
-                <h2 className="text6">Home</h2>
-                <br />
-                <p className="text">
-                  Sample text. Click to select the Text Element.
-                </p>
-              </div>
-            </motion.div>
+              <motion.div whileHover={{ scale: 1.1 }} className="conatiner7">
+                <div className="opacuty">
+                  <h2 className="text6">PRESENTATION</h2>
+                  <br />
+                  <p className="text">
+                    Awarded as winner in PRESENTATION (Crossing method for fine
+                    ores) competition During UTKARSH at GCE, KEONJHAR.
+                  </p>
+                </div>
+              </motion.div>
+              {/* 2 */}
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                id="conta"
+                className="conatiner8">
+                <div className="opacuty">
+                  <h2 className="text6">COUNTER STRIKE 1.6</h2>
+                  <br />
+                  <p className="text">
+                    Awarded for COUNTER STRIKE 1.6 in Techno–Cultural fest
+                    2018-2019 Technical Representative in GCE, KEONJHAR.
+                  </p>
+                </div>
+              </motion.div>
+              {/* 3 */}
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                id="conta"
+                className="conatiner9">
+                <div className="opacuty">
+                  <h2 className="text6">UTKARSH,</h2>
+                  <br />
+                  <p className="text">
+                    Event Coordinator during UTKARSH, techno-cultural fest of
+                    GCE, KEONJHAR. Attended International Conference (IIESD) at
+                    GCE, KEONJHAR.
+                  </p>
+                </div>
+              </motion.div>
+              {/* 4 */}
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                id="conta"
+                className="conatiner10">
+                <div className="opacuty">
+                  <h2 className="text6">Technical</h2>
+                  <br />
+                  <p className="text">
+                    Technical Head in (CMPT 2K19), GCE, KEONJHAR, ODISHA.
+                  </p>
+                </div>
+              </motion.div>
+              {/* 5 */}
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                id="conta"
+                className="conatiner11">
+                <div className="opacuty">
+                  <h2 className="text6">National Conference</h2>
+                  <br />
+                  <p className="text">
+                    Students coordinator of National Conference (CMPT2K19) at
+                    Government college of Keonjhar, Odisha.
+                  </p>
+                </div>
+              </motion.div>
+              \{/* 6 */}
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                id="conta"
+                className="conatiner12">
+                <div className="opacuty">
+                  <h2 className="text6">Home</h2>
+                  <br />
+                  <p className="text">
+                    Sample text. Click to select the Text Element.
+                  </p>
+                </div>
+              </motion.div>
             </div>
           </div>
         </div>

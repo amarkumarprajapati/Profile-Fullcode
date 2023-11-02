@@ -5,7 +5,7 @@ import Work from "./Page/Work";
 import Contact from "./Page/Contact";
 import "./Style.css";
 import { BrowserRouter as Main, Route, Routes } from "react-router-dom";
-import Footer from "./Page/Footer";
+import Footer from "./Components/Footer";
 import Cursor from "./Components/Cursor";
 import { useState, useEffect } from "react";
 
@@ -30,7 +30,7 @@ const Hero = () => {
           {/* Your website content goes here */}
         </div>
       )}
-      <Navbar />
+      <Navbar className="mouseho" />
       <Cursor />
       <Main>
         <Routes>

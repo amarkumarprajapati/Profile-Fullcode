@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
 
 const Work = () => {
   const handleContactme = () => {
@@ -12,18 +11,24 @@ const Work = () => {
     <div>
       <div>
         <div className="Conatiner_4">
-          <div className="slider1">
-            <motion.img src="ezgif.com-video-to.gif" className="image6" />
-            {/* Text */}
-            <motion.h1 className="worktext_h1">What i've been up to</motion.h1>
-            {/* ptag */}
-            <motion.p className="worktext_p1">Work</motion.p>
-            <motion.p className="worktext_p2">
-              Here is a selectoin of project that woked on.
-            </motion.p>
-            <button className="button125" onClick={handleContactme}>
-              Contact Me
-            </button>
+          <div className="slider11">
+          <div>
+          <div>
+              <motion.h1 className="worktext_h1">
+                What i've been up to
+              </motion.h1>
+              <motion.p className="worktext_p1">Work</motion.p>
+              <motion.p className="worktext_p2">
+                Here is a selectoin of project that woked on.
+              </motion.p>
+              <button className="button125" onClick={handleContactme}>
+                Contact Me
+              </button>
+            </div>
+            </div>
+            <div className="imagedata">
+              <motion.img src="ezgif.com-video-to.gif" className="image6" />
+            </div>
           </div>
         </div>
         <div>
@@ -40,7 +45,7 @@ const Work = () => {
             </div>
             <div>
               <Link
-                to="https://www.google.com"
+                to="https://flightticketbooking.netlify.app/"
                 className="Linktag"
                 target="_blank">
                 <motion.h1
@@ -180,9 +185,7 @@ const Work = () => {
             </div>
             {/* 8 */}
             <div className="back23">
-              <Link
-                to="https://musicplayerappnew.netlify.app/"
-                target="_blank">
+              <Link to="https://musicplayerappnew.netlify.app/" target="_blank">
                 <img src="Project 5.png" className="back28" />
               </Link>
             </div>

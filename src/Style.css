@@ -22,8 +22,8 @@
   margin-top: -10px;
 }
 
-
 /* Home */
+
 .Home {
   width: 17%;
   color: black;
@@ -142,9 +142,10 @@
   left: 50px;
   z-index: 999;
 }
-.line {
+.line1 {
   text-decoration: none;
 }
+
 
 /* LoadingScreen.css */
 
@@ -183,8 +184,20 @@
 
 .Conatiner_1 {
   width: 100%;
-  height: 95vh;
+  height: 90vh;
   background-color: black;
+  margin: auto;
+}
+
+.textimg {
+  width: 60%;
+}
+.home {
+  display: inline-flex;
+  align-items: center;
+  background-color: #090909;
+  height: 80vh;
+  width: 100%;
 }
 
 @media (max-width: 500px) {
@@ -194,15 +207,15 @@
   }
 }
 
-.image4 {
-  width: 40%;
-  height: 300px;
-  float: right;
-  border-radius: 20px;
+.color {
   margin: auto;
-  width: 45%;
-  margin: 50px;
-  margin-top: 150px;
+  width: 50%;
+}
+
+.image4 {
+  height: 300px;
+  border-radius: 10px;
+  width: 80%;
 }
 
 @media (max-width: 500px) {
@@ -214,15 +227,18 @@
 }
 
 .texth1 {
-  width: 68%;
-  padding-top: 0px;
-  padding: 50px;
-  padding-left: 250px;
+  margin-left: 250px;
+  width: 100%;
   color: aliceblue;
   font-size: 45px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
 }
-
+.margintop {
+  margin: auto;
+  width: 80%;
+  padding-top: 100px;
+  background-color: #2696e8;
+}
 @media (max-width: 500px) {
   .texth1 {
     width: 80%;
@@ -233,8 +249,8 @@
 
 .textp1 {
   width: 20%;
-  margin-left: 250px;
   color: aliceblue;
+  margin-left: 250px;
   font-size: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
 }
@@ -248,7 +264,7 @@
 }
 
 .textp2 {
-  width: 30%;
+  width: 60%;
   margin-left: 250px;
   color: aliceblue;
   font-size: 30px;
@@ -264,15 +280,14 @@
 }
 
 .button {
-  width:50px;
-   height: 15px;
+  width: 50px;
+  height: 15px;
   float: right;
   margin-top: 50px;
   margin-right: 60px;
-}
-
-.button:hover{
-  color: #b73c3c;
+  border: none;
+  cursor: pointer;
+  background-color: #2696e8;
 }
 
 @media (max-width: 500px) {
@@ -283,13 +298,14 @@
 }
 
 .button1 {
-   width:50px;
-   height: 15px;
+  width: 50px;
+  height: 15px;
   margin-left: 250px;
   margin-top: 50px;
-}
-.button1:hover{
-  color: #b73c3c;
+  cursor: pointer;
+  background-color: #3498db;
+  border: none;
+  cursor: pointer;
 }
 
 @media (max-width: 500px) {
@@ -306,9 +322,14 @@
 /* sectoion 2 */
 
 .section2 {
-  width: 100%;
   background-color: #cc3;
   height: 40vh;
+}
+.section21 {
+  font-family: sans-serif;
+  width: 80%;
+  margin: auto;
+  padding-top: 5rem;
 }
 
 @media (max-width: 500px) {
@@ -333,13 +354,12 @@
 
 .section_button {
   width: 160px;
+  margin-top: 10px;
   height: 60px;
   font-size: 20px;
   font-family: Bwnistagrot bd, sans-serif;
+  font-weight: 500;
   font-size: 20px;
-  font-weight: 600;
-  font-size: 20px;
-  margin-left: 150px;
   color: aliceblue;
   border-color: #d3531a;
   background-color: black;
@@ -505,32 +525,31 @@
 
 .section4 {
   width: 100%;
-  height: 80vh;
   background-color: rgb(0, 0, 0);
 }
 .head_tag {
-  width: 100%;
-  height: 25vh;
+  margin: auto;
+  width: 70%;
   display: flex;
+  justify-content: space-between;
 }
-.text_h1 {
-  padding-right: 400px;
+.backgroundblack {
+  margin-top: 50px;
   color: #ffffff;
-  padding: 50px;
-  margin: 50px;
-  margin-left: 180px;
   font-family: Bwnistagrot bk, sans-serif;
+  width: 80%;
 }
+
 .head_sec {
-  width: 100%;
-  height: 55vh;
-  float: right;
+  color: white;
+  margin-top: 50px;
+  width: 50%;
+  font-family: sans-serif;
 }
 .button_sec4 {
   background-color: aliceblue;
   width: 200px;
   height: 60px;
-  margin-left: 230px;
   background-color: transparent;
   font-size: 20px;
   color: aliceblue;
@@ -557,9 +576,13 @@
 }
 .colortext {
   color: #e0284c;
+  line-height: 60px;
 }
 .colortext2 {
   color: #cc3;
+  margin-top: 50px;
+  font-size: 30px;
+  line-height: 60px;
 }
 .last4 {
   width: 650px;
@@ -631,7 +654,6 @@
 .image451 {
   width: 15%;
   margin-left: 130px;
-  margin-top: 50px;
 }
 .image452 {
   width: 20%;
@@ -647,9 +669,8 @@
 
 .conatiner4 {
   width: 100%;
-  height: 107vh;
   background-color: rgb(5, 11, 45);
-  border-radius: 30px 30px 0px 0px;
+  border-radius: 10px;
 }
 .jgvhvhd {
   width: 50%;
@@ -831,7 +852,8 @@
   width: 40%;
   margin-bottom: 20px;
   padding: 80px;
-  font-family: Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   margin-left: 250px;
 }
 .cat {
@@ -877,8 +899,9 @@
 .lasth1tag {
   width: 100%;
   text-align: center;
-  margin-top: 50px;
-  font-family: Bwnistagrot bd, sans-serif;
+  margin-top: 150px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 .box1 {
   width: 400px;
@@ -1084,40 +1107,41 @@
   height: 100vh;
   background-color: black;
 }
-.image6 {
-  width: 40%;
-  height: 60vh;
-  float: right;
-  border-radius: 50px;
-  margin: 150px;
+.slider11 {
+  display: flex;
 }
 
+.image6 {
+  width: 80%;
+  border-radius: 13%;
+  margin: 10px;
+  height: 450px;
+}
+.imagedata {
+  margin-top: 50px;
+}
 .worktext_h1 {
   color: aliceblue;
   font-size: 50px;
-  width: 50%;
-  padding: 50px;
-  padding-left: 250px;
-  padding-top: 200px;
-  height: 150px;
+  max-width: 50%;
+  margin-left: 250px;
+  margin-top: 150px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
 }
 .worktext_p1 {
   color: aliceblue;
   font-size: 30px;
-  padding: 10px;
-  padding-top: 50px;
-  width: 250px;
-  padding-left: 250px;
-  line-height: 150px;
+  width: 15%;
+  margin-left: 250px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+  line-height: 70px;
 }
 .worktext_p2 {
-  width: 50%;
+  margin: auto;
   color: aliceblue;
   font-size: 30px;
-  padding-left: 250px;
-  margin-top: -50px;
+  margin-left: 250px;
+  width: 40%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
 }
 
@@ -1139,6 +1163,7 @@
   height: 650vh;
 }
 .back23 {
+  border-radius: 10px;
   width: 60%;
   height: 40vh;
   background-color: rgb(218, 218, 218);
@@ -1309,4 +1334,14 @@
 .orh1text {
   margin-top: -60px;
   margin-left: 180px;
+}
+
+/* navbar */
+.mouseho:hover {
+  cursor: pointer;
+}
+
+/* footer */
+.section5 {
+  background-color: #000000;
 }
