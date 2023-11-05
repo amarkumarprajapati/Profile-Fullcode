@@ -102,14 +102,14 @@ const Work = () => {
             {/* 4 */}
             <div className="back23">
               <Link
-                to="https://64ef7ad5a3eabb4890cf5eb9--darling-gingersnap-837acd.netlify.app/"
+                to="https://tshirtsnew.netlify.app/"
                 target="_blank">
                 <img src="Project 3.png" className="back28" />
               </Link>
             </div>
             <div>
               <Link
-                to="https://64ef7ad5a3eabb4890cf5eb9--darling-gingersnap-837acd.netlify.app/"
+                to="https://tshirtsnew.netlify.app/"
                 className="Linktag"
                 target="_blank">
                 <motion.h1
@@ -123,7 +123,7 @@ const Work = () => {
             {/* 5 */}
             <div className="back23">
               <Link
-                to="https://64ef8a13fddcdf00086d4103--precious-palmier-1e3227.netlify.app/"
+                to="https://oldprofile1.netlify.app"
                 target="_blank">
                 <img src="Project 40.png" className="back28" />
               </Link>
@@ -143,14 +143,14 @@ const Work = () => {
             </div>
             {/* 6 */}
             <div className="back23">
-              <Link to="https://oldprofile1.netlify.app" target="_blank">
+              <Link to="https://travelwebiste.netlify.app/" target="_blank">
                 <img src="Project 4.png" className="back28" />
               </Link>
             </div>
             <div>
               <Link
                 className="Linktag"
-                to="https://precious-palmier-1e3227.netlify.app/"
+                to="https://travelwebiste.netlify.app/"
                 target="_blank">
                 <motion.h1
                   whileHover={{ scale: 1.1, x: 10 }}
@@ -176,7 +176,7 @@ const Work = () => {
                 <motion.h1
                   whileHover={{ scale: 1.1, x: 10 }}
                   className="colorchange">
-                  Signin in
+                  Login Page
                 </motion.h1>
               </Link>
               <p whileHover={{ scale: 1.1, x: 10 }} className="colorchange1">
