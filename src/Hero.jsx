@@ -43,7 +43,9 @@ const Hero = () => {
           <Route exact path="/contact" element={<Contact />} />
         </Routes>
       </Main>
+      <div>
       <Footer />
+      </div>
     </>
   );
 };

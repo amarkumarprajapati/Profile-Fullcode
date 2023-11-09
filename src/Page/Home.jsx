@@ -267,12 +267,7 @@ const Home = (a) => {
 
       <motion.div className="section2">
         <motion.div
-          style={{
-            width: 150,
-            height: 150,
-            borderRadius: 30,
-            backgroundColor: "red",
-          }}
+          className="football"
           drag
           whileDrag={{ scale: 1.2 }}
           transition={{ duration: 0.6 }}
@@ -281,17 +276,17 @@ const Home = (a) => {
             right: 1300,
             top: 0,
             bottom: 2000,
-          }}
-          >
+          }}>
           <h1
+          className="ball"
             style={{
               margin: "auto",
               width: "90%",
-              color: "white",
-              paddingTop: "50px",
+              paddingTop: "55px",
+              paddingLeft:"2px",
               fontFamily: "sans-serif",
             }}>
-            Drag me
+            Drag Me
           </h1>
         </motion.div>
         <div className="section21">
@@ -521,65 +516,69 @@ const Home = (a) => {
       </div>
       {/* section 4 */}
       <div>
-        <div>
-          <div className="section8">
-            <div className="automix" id="Service">
-              <VisibilitySensor
-                onChange={handleVisibilityChange}
-                partialVisibility
-                offset={{ bottom: 200 }}>
-                <motion.h1
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{
-                    opacity: isVisible ? 2 : 0,
-                    y: isVisible ? 0 : 30,
-                  }}
-                  transition={{ duration: 5 }}>
-                  My Skills
-                </motion.h1>
-              </VisibilitySensor>
+        <div className="section8">
+          <div className="automix" id="Service">
+            <VisibilitySensor
+              onChange={handleVisibilityChange}
+              partialVisibility
+              offset={{ bottom: 200 }}>
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{
+                  opacity: isVisible ? 2 : 0,
+                  y: isVisible ? 0 : 30,
+                }}
+                transition={{ duration: 5 }}>
+                My Skills
+              </motion.h1>
+            </VisibilitySensor>
+          </div>
+          <div className="diplayflrex">
+            <div className="margien">
+              <motion.img
+                whileTap={{rotate:20}}
+                whileHover={{ scale: 1.1 }}
+                src="html5-logo-31820.png"
+                alt="image"
+                className="image1"
+              />
+              <motion.img
+              whileTap={{rotate:-20}}
+                whileHover={{ scale: 1.1 }}
+                src="CSS3_logo_and_wordmark.svg.png"
+                alt="image1"
+                className="image2"
+              />
+              <motion.img
+              whileTap={{rotate:20}}
+                whileHover={{ scale: 1.1 }}
+                src="Javascript.png"
+                alt="image2"
+                className="image3"
+              />
             </div>
-            <div className="diplayflrex">
-              <div className="margien">
-                <motion.img
-                  whileHover={{ scale: 1.1 }}
-                  src="html5-logo-31820.png"
-                  alt="image"
-                  className="image1"
-                />
-                <motion.img
-                  whileHover={{ scale: 1.1 }}
-                  src="CSS3_logo_and_wordmark.svg.png"
-                  alt="image1"
-                  className="image2"
-                />
-                <motion.img
-                  whileHover={{ scale: 1.1 }}
-                  src="Javascript.png"
-                  alt="image2"
-                  className="image3"
-                />
-              </div>
-              <div className="margien">
-                <motion.img
-                  whileHover={{ scale: 1.1 }}
-                  src="three.png"
-                  alt="image4"
-                  className="image451"
-                />
-                <motion.img
-                  whileHover={{ scale: 1.1 }}
-                  src="framer-motion-seeklogo.com.png"
-                  alt="image4"
-                  className="image452"
-                />
-                <motion.img
-                  whileHover={{ scale: 1.1 }}
-                  src="mongo-removebg-preview.png"
-                  alt="image4"
-                  className="image453"
-                />
-              </div>
+            <div className="margien">
+              <motion.img
+              whileTap={{rotate:-20}}
+                whileHover={{ scale: 1.1 }}
+                src="three.png"
+                alt="image4"
+                className="image451"
+              />
+              <motion.img
+              whileTap={{rotate:20}}
+                whileHover={{ scale: 1.1 }}
+                src="framer-motion-seeklogo.com.png"
+                alt="image4"
+                className="image452"
+              />
+              <motion.img
+              whileTap={{rotate:-20}}
+                whileHover={{ scale: 1.1 }}
+                src="mongo-removebg-preview.png"
+                alt="image4"
+                className="image453"
+              />
             </div>
           </div>
         </div>
