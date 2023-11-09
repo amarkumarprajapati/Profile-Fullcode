@@ -11,7 +11,7 @@ const Footer = () => {
     <div>
       <div className="section5">
         <div className="head_tag">
-        <div className="backgroundblack">
+          <div className="backgroundblack">
             <h1 className="text_h1">
               Lets design somthing
               <br />
@@ -33,6 +33,7 @@ const Footer = () => {
             <span className="colortext2">Social media:</span>
             <a
               href="https://www.linkedin.com/in/amar-prajapati-76255072/"
+              target="_blank"
               className="line1">
               <motion.button whileTap={{ scaleX: 0.8 }} className="button_sec5">
                 Linked in
@@ -40,18 +41,23 @@ const Footer = () => {
             </a>
             <a
               href="https://github.com/amarkumarprajapati?tab=repositories"
+              target="_blank"
               className="line1">
               <motion.button whileTap={{ scaleX: 0.8 }} className="button_sec5">
                 Github
               </motion.button>
             </a>
-            <a href="https://www.facebook.com/amarkk1" className="line1">
+            <a
+              href="https://www.facebook.com/amarkk1"
+              target="_blank"
+              className="line1">
               <motion.button whileTap={{ scaleX: 0.8 }} className="button_sec5">
                 Facebook
               </motion.button>
             </a>
             <a
               href="https://www.instagram.com/amarkumarprajapatikkr/"
+              target="_blank"
               className="line1">
               <motion.button whileTap={{ scaleX: 0.8 }} className="button_sec5">
                 instagram

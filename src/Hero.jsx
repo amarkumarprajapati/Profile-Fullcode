@@ -8,16 +8,20 @@ import { BrowserRouter as Main, Route, Routes } from "react-router-dom";
 import Footer from "./Components/Footer";
 import Cursor from "./Components/Cursor";
 import { useState, useEffect } from "react";
+import { motion, useScroll } from "framer-motion";
+import React from "react";
 
 const Hero = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a delay for demonstration purposes
     setTimeout(() => {
       setLoading(false);
-    }, 1000); // Adjust the delay as needed
+    }, 1000);
   }, []);
+
+  // Scroll
+  const { scrollYProgress } = useScroll();
 
   return (
     <>
@@ -26,10 +30,9 @@ const Hero = () => {
           <div className="loader"></div>
         </div>
       ) : (
-        <div className="content">
-          {/* Your website content goes here */}
-        </div>
+        <div className="content"></div>
       )}
+      <motion.div className="newbar" style={{ scaleX: scrollYProgress }} />
       <Navbar className="mouseho" />
       <Cursor />
       <Main>

@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence, useAnimation } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useAnimation,
+  easeInOut,
+} from "framer-motion";
 import VisibilitySensor from "react-visibility-sensor";
 import Details from "../Components/Details";
+import { useScroll } from "framer-motion";
 
 const Home = (a) => {
   const slides = [
@@ -60,10 +66,11 @@ const Home = (a) => {
     }
   };
 
-  // while in view
-
+  // while in view Scroll
+  const { scrollYProgress } = useScroll();
   return (
     <>
+      <motion.div className="newbar" style={{ scaleX: scrollYProgress }} />
       {/* section1 */}
       <section className="slider1">
         <div className="home">
@@ -77,7 +84,7 @@ const Home = (a) => {
                   animate={{ x: 0 }}
                   transition={{
                     duration: "1",
-                    delay: "1.2",
+                    delay: "0.5",
                   }}>
                   MERN STACK
                 </motion.h1>
@@ -91,7 +98,7 @@ const Home = (a) => {
                 animate={{ x: 0 }}
                 transition={{
                   duration: "1",
-                  delay: "1.3",
+                  delay: "0.5",
                 }}>
                 MongoDB
               </motion.p>
@@ -103,7 +110,7 @@ const Home = (a) => {
                 animate={{ x: 0 }}
                 transition={{
                   duration: "1",
-                  delay: "1.4",
+                  delay: "0.5",
                 }}>
                 MongoDB is a NoSQL database that stores data in a flexible,
                 JSON-like format.
@@ -116,11 +123,11 @@ const Home = (a) => {
               <motion.h1
                 src={slides[currentSlide]}
                 className="texth1"
-                initial={{ x: -1000 }}
-                animate={{ x: 0 }}
+                initial={{ y: -1000 }}
+                animate={{ y: 0 }}
                 transition={{
                   duration: "1",
-                  delay: "1.2",
+                  delay: "0.5",
                 }}>
                 Web Development
               </motion.h1>
@@ -129,11 +136,11 @@ const Home = (a) => {
             {slides[currentSlide].id === 2 && (
               <motion.p
                 className="textp1"
-                initial={{ x: -1000 }}
-                animate={{ x: 0 }}
+                initial={{ y: -1000 }}
+                animate={{ y: 0 }}
                 transition={{
                   duration: "1",
-                  delay: "1.3",
+                  delay: "0.5",
                 }}>
                 Node.js
               </motion.p>
@@ -141,11 +148,11 @@ const Home = (a) => {
             {slides[currentSlide].id === 2 && (
               <motion.p
                 className="textp2"
-                initial={{ x: -1000 }}
-                animate={{ x: 0 }}
+                initial={{ y: -1000 }}
+                animate={{ y: 0 }}
                 transition={{
                   duration: "1",
-                  delay: "1.4",
+                  delay: "0.5",
                 }}>
                 Node.js is a runtime environment JavaScript on the server.
               </motion.p>
@@ -161,7 +168,7 @@ const Home = (a) => {
                 animate={{ x: 0 }}
                 transition={{
                   duration: "1",
-                  delay: "1.2",
+                  delay: "0.5",
                 }}>
                 Web Development
               </motion.h1>
@@ -174,7 +181,7 @@ const Home = (a) => {
                 animate={{ x: 0 }}
                 transition={{
                   duration: "1",
-                  delay: "1.3",
+                  delay: "0.5",
                 }}>
                 Vite+React
               </motion.p>
@@ -186,7 +193,7 @@ const Home = (a) => {
                 animate={{ x: 0 }}
                 transition={{
                   duration: "1",
-                  delay: "1.4",
+                  delay: "0.5",
                 }}>
                 React is a JavaScript library for building user interfaces
               </motion.p>
@@ -198,11 +205,11 @@ const Home = (a) => {
               <motion.h1
                 src={slides[currentSlide]}
                 className="texth1"
-                initial={{ x: -1000 }}
-                animate={{ x: 0 }}
+                initial={{ y: -1000 }}
+                animate={{ y: 0 }}
                 transition={{
                   duration: "1",
-                  delay: "1.2",
+                  delay: "0.5",
                 }}>
                 Web Development
               </motion.h1>
@@ -212,11 +219,11 @@ const Home = (a) => {
             {slides[currentSlide].id === 4 && (
               <motion.p
                 className="textp1"
-                initial={{ x: -1000 }}
-                animate={{ x: 0 }}
+                initial={{ y: -1000 }}
+                animate={{ y: 0 }}
                 transition={{
                   duration: "1",
-                  delay: "1.3",
+                  delay: "0.5",
                 }}>
                 Express.js
               </motion.p>
@@ -225,33 +232,31 @@ const Home = (a) => {
             {slides[currentSlide].id === 4 && (
               <motion.p
                 className="textp2"
-                initial={{ x: -1000 }}
-                animate={{ x: 0 }}
+                initial={{ y: -1000 }}
+                animate={{ y: 0 }}
                 transition={{
                   duration: "1",
-                  delay: "1.4",
+                  delay: "0.5",
                 }}>
                 {slides.text}Express.js is a back-end framework for Node.js
               </motion.p>
             )}
             <motion.button
-              whileFocus={{ scale: 1 }}
+              whileHover={{ scale: 2 }}
               onClick={handleNextSlide}
               className="button1"></motion.button>
             <motion.button
-              whileHover={{ scale: 1 }}
+              whileHover={{ scale: 2 }}
               onClick={handlePrevSlide}
               className="button"></motion.button>
           </div>
           <div className="color">
             <motion.img
               src={slides[currentSlide].imageUrl}
+              transition={{ type: "spring", stiffness: 200, damping: 10 }}
+              whileHover={{ scale: "1.1" }}
               initial={{ x: -100 }}
               animate={{ x: 0 }}
-              transition={{
-                duration: "1",
-                delay: "1",
-              }}
               className="image4"
             />
           </div>
@@ -259,7 +264,36 @@ const Home = (a) => {
       </section>
 
       {/* section 2 */}
-      <div className="section2">
+
+      <motion.div className="section2">
+        <motion.div
+          style={{
+            width: 150,
+            height: 150,
+            borderRadius: 30,
+            backgroundColor: "red",
+          }}
+          drag
+          whileDrag={{ scale: 1.2 }}
+          transition={{ duration: 0.6 }}
+          dragConstraints={{
+            left: 0,
+            right: 1300,
+            top: 0,
+            bottom: 2000,
+          }}
+          >
+          <h1
+            style={{
+              margin: "auto",
+              width: "90%",
+              color: "white",
+              paddingTop: "50px",
+              fontFamily: "sans-serif",
+            }}>
+            Drag me
+          </h1>
+        </motion.div>
         <div className="section21">
           <VisibilitySensor
             className="section_text1"
@@ -267,10 +301,10 @@ const Home = (a) => {
             partialVisibility
             offset={{ bottom: 100 }}>
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{
                 opacity: isVisible ? 1 : 0,
-                y: isVisible ? 0 : 20,
+                y: isVisible ? 0 : 30,
               }}
               transition={{ duration: 1 }}>
               {Details.details}
@@ -278,6 +312,12 @@ const Home = (a) => {
           </VisibilitySensor>
           <VisibilitySensor>
             <motion.button
+              initial={{ opacity: 0, y: 20 }}
+              animate={{
+                opacity: isVisible ? 1 : 0,
+                y: isVisible ? 0 : 30,
+              }}
+              transition={{ duration: 1 }}
               onClick={toggleSectionButton}
               onChange={handleVisibilityChange}
               whileTap={{ scaleX: 0.8 }}
@@ -322,17 +362,17 @@ const Home = (a) => {
             </div>
           </div>
         )}
-      </div>
+      </motion.div>
       {/* section 3 */}
       <div>
-      <div className="headtag">
+        <div className="headtag">
           <div className="head">
             <VisibilitySensor
               onChange={handleVisibilityChange}
               partialVisibility
               offset={{ bottom: 100 }}>
               <motion.h1
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
                 transition={{ duration: 1.5 }}
                 className="headh1tag">
@@ -346,7 +386,16 @@ const Home = (a) => {
                 onChange={handleVisibilityChange}
                 partialVisibility
                 offset={{ bottom: 100 }}>
-                <motion.h1 className="h1text1">Motion Graphics.</motion.h1>
+                <motion.h1
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{
+                    opacity: isVisible ? 1 : 0,
+                    y: isVisible ? 0 : 30,
+                  }}
+                  transition={{ duration: 1 }}
+                  className="h1text1">
+                  Motion Graphics.
+                </motion.h1>
               </VisibilitySensor>
               <VisibilitySensor
                 onChange={handleVisibilityChange}
@@ -370,7 +419,7 @@ const Home = (a) => {
                 partialVisibility
                 offset={{ bottom: 100 }}>
                 <motion.h1
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 30 }}
                   animate={{
                     opacity: isVisible ? 1 : 0,
                     y: isVisible ? 0 : 20,
@@ -385,7 +434,7 @@ const Home = (a) => {
                 partialVisibility
                 offset={{ bottom: 100 }}>
                 <motion.p2
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 30 }}
                   animate={{
                     opacity: isVisible ? 1 : 0,
                     y: isVisible ? 0 : 20,
@@ -402,7 +451,7 @@ const Home = (a) => {
                 partialVisibility
                 offset={{ bottom: 100 }}>
                 <motion.h1
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 30 }}
                   animate={{
                     opacity: isVisible ? 1 : 0,
                     y: isVisible ? 0 : 20,
@@ -417,7 +466,7 @@ const Home = (a) => {
                 partialVisibility
                 offset={{ bottom: 100 }}>
                 <motion.p2
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 30 }}
                   animate={{
                     opacity: isVisible ? 1 : 0,
                     y: isVisible ? 0 : 20,
@@ -434,7 +483,16 @@ const Home = (a) => {
                 onChange={handleVisibilityChange}
                 partialVisibility
                 offset={{ bottom: 100 }}>
-                <motion.h1 className="h1text1">Education.</motion.h1>
+                <motion.h1
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{
+                    opacity: isVisible ? 1 : 0,
+                    y: isVisible ? 0 : 30,
+                  }}
+                  transition={{ duration: 1 }}
+                  className="h1text1">
+                  Education.
+                </motion.h1>
               </VisibilitySensor>
               <VisibilitySensor
                 onChange={handleVisibilityChange}
@@ -445,7 +503,7 @@ const Home = (a) => {
                   partialVisibility
                   offset={{ bottom: 100 }}>
                   <motion.p2
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 30 }}
                     animate={{
                       opacity: isVisible ? 1 : 0,
                       y: isVisible ? 0 : 20,
@@ -463,7 +521,7 @@ const Home = (a) => {
       </div>
       {/* section 4 */}
       <div>
-      <div>
+        <div>
           <div className="section8">
             <div className="automix" id="Service">
               <VisibilitySensor
