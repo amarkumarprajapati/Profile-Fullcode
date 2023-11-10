@@ -38,14 +38,14 @@ const Work = () => {
             {/* 1 */}
             <div className="back23">
               <Link
-                to="https://flightticketbooking.netlify.app/"
+                to="https://resilient-figolla-cb0337.netlify.app/"
                 target="_blank">
                 <img src="1565.png" className="back25" />
               </Link>
             </div>
             <div>
               <Link
-                to="https://flightticketbooking.netlify.app/"
+                to="https://resilient-figolla-cb0337.netlify.app/"
                 className="Linktag"
                 target="_blank">
                 <motion.h1
