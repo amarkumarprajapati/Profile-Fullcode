@@ -38,14 +38,14 @@ const Work = () => {
             {/* 1 */}
             <div className="back23">
               <Link
-                to="https://resilient-figolla-cb0337.netlify.app/"
+                to="https://flightticketbooking.netlify.app/"
                 target="_blank">
                 <img src="1565.png" className="back25" />
               </Link>
             </div>
             <div>
               <Link
-                to="https://resilient-figolla-cb0337.netlify.app/"
+                to="https://flightticketbooking.netlify.app/"
                 className="Linktag"
                 target="_blank">
                 <motion.h1
@@ -60,7 +60,7 @@ const Work = () => {
             {/* 2 */}
             <div className="back23">
               <Link
-                to="https://graceful-sunflower-32d7dd.netlify.app/"
+                to="https://fooddeliveryquickbite.netlify.app/"
                 target="_blank">
                 <img src="Project 2.png" className="back26" />
               </Link>
@@ -68,7 +68,7 @@ const Work = () => {
             <div>
               <Link
                 className="Linktag"
-                to="https://graceful-sunflower-32d7dd.netlify.app/"
+                to="https://fooddeliveryquickbite.netlify.app/"
                 target="_blank">
                 <motion.h1
                   whileHover={{ scale: 1.1, x: 10 }}
@@ -205,7 +205,7 @@ const Work = () => {
             {/* 9 */}
             <div className="back23">
               <Link
-                to="https://marvelous-cupcake-55a8f2.netlify.app/"
+                to="https://main--zippy-kringle-c57aab.netlify.app/"
                 target="_blank">
                 <img src="Project 6.png" className="back28" />
               </Link>
@@ -213,7 +213,7 @@ const Work = () => {
             <div>
               <Link
                 className="Linktag"
-                to="https://marvelous-cupcake-55a8f2.netlify.app/"
+                to="https://main--zippy-kringle-c57aab.netlify.app/"
                 target="_blank">
                 <motion.h1
                   whileHover={{ scale: 1.1, x: 10 }}
