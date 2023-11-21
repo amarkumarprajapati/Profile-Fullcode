@@ -8,7 +8,7 @@ const Navbar = () => {
   };
   const [show, setshow] = useState(false);
   return (
-    <div>
+    <div className="newclass">
       <div className="wrapper">
         <motion.div
           id="nav-icon1"

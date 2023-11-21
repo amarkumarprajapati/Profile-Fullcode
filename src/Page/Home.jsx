@@ -8,6 +8,7 @@ import {
 import VisibilitySensor from "react-visibility-sensor";
 import Details from "../Components/Details";
 import { useScroll } from "framer-motion";
+import Section3 from "./Section3";
 
 const Home = (a) => {
   const slides = [
@@ -70,7 +71,6 @@ const Home = (a) => {
   const { scrollYProgress } = useScroll();
   return (
     <>
-      <motion.div className="newbar" style={{ scaleX: scrollYProgress }} />
       {/* section1 */}
       <section className="slider1">
         <div className="home">
@@ -278,12 +278,8 @@ const Home = (a) => {
             bottom: 2000,
           }}>
           <h1
-          className="ball"
+            className="ball"
             style={{
-              margin: "auto",
-              width: "90%",
-              paddingTop: "55px",
-              paddingLeft:"2px",
               fontFamily: "sans-serif",
             }}>
             Drag Me
@@ -359,228 +355,72 @@ const Home = (a) => {
         )}
       </motion.div>
       {/* section 3 */}
-      <div>
-        <div className="headtag">
-          <div className="head">
-            <VisibilitySensor
-              onChange={handleVisibilityChange}
-              partialVisibility
-              offset={{ bottom: 100 }}>
-              <motion.h1
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
-                transition={{ duration: 1.5 }}
-                className="headh1tag">
-                {Details.section2}
-              </motion.h1>
-            </VisibilitySensor>
-          </div>
-          <div className="conat">
-            <div className="text12">
-              <VisibilitySensor
-                onChange={handleVisibilityChange}
-                partialVisibility
-                offset={{ bottom: 100 }}>
-                <motion.h1
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{
-                    opacity: isVisible ? 1 : 0,
-                    y: isVisible ? 0 : 30,
-                  }}
-                  transition={{ duration: 1 }}
-                  className="h1text1">
-                  Motion Graphics.
-                </motion.h1>
-              </VisibilitySensor>
-              <VisibilitySensor
-                onChange={handleVisibilityChange}
-                partialVisibility
-                offset={{ bottom: 100 }}>
-                <motion.p2
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{
-                    opacity: isVisible ? 1 : 0,
-                    y: isVisible ? 0 : 30,
-                  }}
-                  transition={{ duration: 2 }}
-                  className="p1text1">
-                  {Details.p1tag1}
-                </motion.p2>
-              </VisibilitySensor>
-            </div>
-            <div className="text13">
-              <VisibilitySensor
-                onChange={handleVisibilityChange}
-                partialVisibility
-                offset={{ bottom: 100 }}>
-                <motion.h1
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{
-                    opacity: isVisible ? 1 : 0,
-                    y: isVisible ? 0 : 20,
-                  }}
-                  transition={{ duration: 2 }}
-                  className="h1text1">
-                  Animated Interactions.
-                </motion.h1>
-              </VisibilitySensor>
-              <VisibilitySensor
-                onChange={handleVisibilityChange}
-                partialVisibility
-                offset={{ bottom: 100 }}>
-                <motion.p2
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{
-                    opacity: isVisible ? 1 : 0,
-                    y: isVisible ? 0 : 20,
-                  }}
-                  transition={{ duration: 2 }}
-                  className="p1text1">
-                  {Details.p1tag2}
-                </motion.p2>
-              </VisibilitySensor>
-            </div>
-            <div className="text14">
-              <VisibilitySensor
-                onChange={handleVisibilityChange}
-                partialVisibility
-                offset={{ bottom: 100 }}>
-                <motion.h1
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{
-                    opacity: isVisible ? 1 : 0,
-                    y: isVisible ? 0 : 20,
-                  }}
-                  transition={{ duration: 2 }}
-                  className="h1text1">
-                  Webflow Development.
-                </motion.h1>
-              </VisibilitySensor>
-              <VisibilitySensor
-                onChange={handleVisibilityChange}
-                partialVisibility
-                offset={{ bottom: 100 }}>
-                <motion.p2
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{
-                    opacity: isVisible ? 1 : 0,
-                    y: isVisible ? 0 : 20,
-                  }}
-                  transition={{ duration: 2 }}
-                  className="p1text1">
-                  From small teasers, to explainers, to full storytelling
-                  experiences, I will help you move ideas around.
-                </motion.p2>
-              </VisibilitySensor>
-            </div>
-            <div className="text15">
-              <VisibilitySensor
-                onChange={handleVisibilityChange}
-                partialVisibility
-                offset={{ bottom: 100 }}>
-                <motion.h1
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{
-                    opacity: isVisible ? 1 : 0,
-                    y: isVisible ? 0 : 30,
-                  }}
-                  transition={{ duration: 1 }}
-                  className="h1text1">
-                  Education.
-                </motion.h1>
-              </VisibilitySensor>
-              <VisibilitySensor
-                onChange={handleVisibilityChange}
-                partialVisibility
-                offset={{ bottom: 100 }}>
-                <VisibilitySensor
-                  onChange={handleVisibilityChange}
-                  partialVisibility
-                  offset={{ bottom: 100 }}>
-                  <motion.p2
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{
-                      opacity: isVisible ? 1 : 0,
-                      y: isVisible ? 0 : 20,
-                    }}
-                    transition={{ duration: 2 }}
-                    className="p1text1">
-                    From small teasers, to explainers, to full storytelling
-                    experiences, I will help you move ideas around.
-                  </motion.p2>
-                </VisibilitySensor>
-              </VisibilitySensor>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Section3/>
+
       {/* section 4 */}
-      <div>
-        <div className="section8">
-          <div className="automix" id="Service">
-            <VisibilitySensor
-              onChange={handleVisibilityChange}
-              partialVisibility
-              offset={{ bottom: 200 }}>
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{
-                  opacity: isVisible ? 2 : 0,
-                  y: isVisible ? 0 : 30,
-                }}
-                transition={{ duration: 5 }}>
-                My Skills
-              </motion.h1>
-            </VisibilitySensor>
-          </div>
-          <div className="diplayflrex">
-            <div className="margien">
-              <motion.img
-                whileTap={{rotate:20}}
-                whileHover={{ scale: 1.1 }}
-                src="html5-logo-31820.png"
-                alt="image"
-                className="image1"
-              />
-              <motion.img
-              whileTap={{rotate:-20}}
-                whileHover={{ scale: 1.1 }}
-                src="CSS3_logo_and_wordmark.svg.png"
-                alt="image1"
-                className="image2"
-              />
-              <motion.img
-              whileTap={{rotate:20}}
-                whileHover={{ scale: 1.1 }}
-                src="Javascript.png"
-                alt="image2"
-                className="image3"
-              />
-            </div>
-            <div className="margien">
-              <motion.img
-              whileTap={{rotate:-20}}
-                whileHover={{ scale: 1.1 }}
-                src="three.png"
-                alt="image4"
-                className="image451"
-              />
-              <motion.img
-              whileTap={{rotate:20}}
-                whileHover={{ scale: 1.1 }}
-                src="framer-motion-seeklogo.com.png"
-                alt="image4"
-                className="image452"
-              />
-              <motion.img
-              whileTap={{rotate:-20}}
-                whileHover={{ scale: 1.1 }}
-                src="mongo-removebg-preview.png"
-                alt="image4"
-                className="image453"
-              />
-            </div>
-          </div>
+
+      <div className="section8">
+        <div className="automix" id="Service">
+          <VisibilitySensor
+            onChange={handleVisibilityChange}
+            partialVisibility
+            offset={{ bottom: 200 }}>
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{
+                opacity: isVisible ? 2 : 0,
+                y: isVisible ? 0 : 30,
+              }}
+              transition={{ duration: 5 }}>
+              My Skills
+            </motion.h1>
+          </VisibilitySensor>
+        </div>
+        <div className="diplayflrex">
+          <motion.img
+            whileTap={{ rotate: 20 }}
+            whileHover={{ scale: 1.1 }}
+            src="html5-logo-31820.png"
+            alt="image"
+            className="image1"
+          />
+          <motion.img
+            whileTap={{ rotate: -20 }}
+            whileHover={{ scale: 1.1 }}
+            src="CSS3_logo_and_wordmark.svg.png"
+            alt="image1"
+            className="image2"
+          />
+          <motion.img
+            whileTap={{ rotate: 20 }}
+            whileHover={{ scale: 1.1 }}
+            src="Javascript.png"
+            alt="image2"
+            className="image3"
+          />
+        </div>
+        <div className="margien">
+          <motion.img
+            whileTap={{ rotate: -20 }}
+            whileHover={{ scale: 1.1 }}
+            src="three.png"
+            alt="image4"
+            className="image451"
+          />
+          <motion.img
+            whileTap={{ rotate: 20 }}
+            whileHover={{ scale: 1.1 }}
+            src="framer-motion-seeklogo.com.png"
+            alt="image4"
+            className="image452"
+          />
+          <motion.img
+            whileTap={{ rotate: -20 }}
+            whileHover={{ scale: 1.1 }}
+            src="mongo-removebg-preview.png"
+            alt="image4"
+            className="image453"
+          />
         </div>
       </div>
     </>
