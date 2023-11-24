@@ -14,22 +14,22 @@ const Home = (a) => {
   const slides = [
     {
       id: 1,
-      imageUrl: "original-3gif.gif",
+      imageUrl: "12.png",
       text: "Slide 1",
     },
     {
       id: 2,
-      imageUrl: "original-2.gif",
+      imageUrl: "12.png",
       text: "Slide 2",
     },
     {
       id: 3,
-      imageUrl: "original 1.gif",
+      imageUrl: "12.png",
       text: "Slide 3",
     },
     {
       id: 4,
-      imageUrl: "original.gif",
+      imageUrl: "12.png",
       text: "Slide 4",
     },
   ];
@@ -355,7 +355,7 @@ const Home = (a) => {
         )}
       </motion.div>
       {/* section 3 */}
-      <Section3/>
+      <Section3 />
 
       {/* section 4 */}
 

@@ -21,7 +21,7 @@ const Contact = () => {
 
   const sendMessage = () => {
     const message = generateMessage();
-    const whatsappLink = `https://wa.me/${8908013842}?text=${encodeURIComponent(
+    const whatsappLink = `https://wa.me/${+918908013842}?text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappLink, "_blank");
